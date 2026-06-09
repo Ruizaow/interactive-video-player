@@ -1,0 +1,63 @@
+{
+  "intro": {
+    "video": "/videos/video_1.mp4",
+    "choices": [
+      {
+        "text": "Perguntar sobre instrumento",
+        "next": "instrumento"
+      },
+      {
+        "text": "Mostrar mente",
+        "next": "mente_patrick"
+      }
+    ]
+  },
+
+  "instrumento": {
+    "video": "/videos/video_2.mp4",
+    "choices": [
+      {
+        "text": "Assaltar banco",
+        "next": "assalto_banco"
+      },
+      {
+        "text": "Contar próximo número",
+        "next": "24_25"
+      }
+    ]
+  },
+
+  "mente_patrick": {
+    "video": "/videos/video_3.mp4",
+    "choices": [
+      {
+        "text": "Botar fogo no Siri Cascudo",
+        "next": "fogo"
+      },
+      {
+        "text": "Se sacrificar",
+        "next": "agarafile"
+      }
+    ]
+  },
+
+  "assalto_banco": {
+    "video": "/videos/video_4.mp4",
+    "choices": []
+  },
+
+  "24_25": {
+    "video": "/videos/video_5.mp4",
+    "choices": []
+  },
+
+  "fogo": {
+    "video": "/videos/video_6.mp4",
+    "choices": []
+  },
+
+  "agarafile": {
+    "video": "/videos/video_7.mp4",
+    "choices": []
+  }
+}
