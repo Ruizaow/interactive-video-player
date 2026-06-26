@@ -1,5 +1,3 @@
-import '../App.css'
-
 function ChoiceButtons({ choices, onSelect }) {
   return (
     <div className="choices">

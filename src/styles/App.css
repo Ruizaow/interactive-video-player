@@ -1,0 +1,223 @@
+/* ========================= */
+/* Responsividade - 1024px */
+/* ========================= */
+
+@media (min-width: 1024px) {
+  .sinopseContainer {
+    justify-content: space-between;
+    align-items: start;
+  }
+  .sinopseContainer .sinopseSection {
+    margin-top: -24px;
+  }
+  .sinopseContainer .poster {
+    min-width: 436px;
+    margin-right: 64px;
+  }
+}
+@media (max-width: 1024px) {
+  .sinopseContainer {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 48px;
+  }
+
+  .sinopseContainer .poster {
+    min-width: 100%;
+    max-width: 436px;
+    width: 100%;
+    margin-right: 0;
+  }
+
+  .sinopseContainer .sinopseSection {
+    width: 100%;
+    max-width: 100%;
+  }
+}
+
+/* ========================= */
+/* Responsividade - 692px */
+/* ========================= */
+
+@media (min-width: 692px) {
+  .sinopseContainer {
+    padding: 0 128px;
+  }
+}
+@media (max-width: 692px) {
+  .sinopseContainer {
+    padding: 0 48px;
+  }
+}
+
+/* ========================= */
+/* Responsividade - 648px */
+/* ========================= */
+
+@media (max-width: 648px) {
+  .titles {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    padding: 24px;
+    text-align: center;
+  }
+
+  .titles .hyperlinks {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+}
+
+/* ========================= */
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: #000;
+  color: white;
+  font-family: Roboto;
+}
+
+.titles {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 48px 0px 48px;
+}
+
+.titles h1 {
+  font-size: 30px;
+  font-weight: 900;
+  color: #990000;
+  cursor: pointer;
+}
+.titles h1:hover {
+  scale: 1.03;
+  opacity: 0.7;
+  transition: 0.1s;
+}
+
+.titles .hyperlinks {
+  display: flex;
+  gap: 24px;
+}
+
+.titles .hyperlinks a {
+  font-size: 16px;
+  font-weight: 700;
+  color: #FFF;
+  text-decoration: none;
+  cursor: pointer;
+}
+.titles .hyperlinks a:hover {
+  scale: 1.05;
+  opacity: 0.7;
+  transition: 0.1s;
+}
+
+.videoplayerContainer {
+  height: 694px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 200px;
+}
+
+.sinopseContainer {
+  display: flex;
+  margin-bottom: 200px;
+}
+
+.sinopseContainer .poster {
+  height: 406px;
+  background-color: #FFF;
+}
+
+.sinopseContainer .sinopseSection {
+  display: flex;
+  flex-direction: column;
+  max-width: 1216px;
+  gap: 16px;
+}
+
+.sinopseContainer .sinopseSection h1 {
+  font-size: 36px;
+  color: #990000;
+  margin-bottom: -4px;
+}
+.sinopseContainer .sinopseSection p {
+  font-size: 14px;
+  font-weight: 400;
+  color: #9CA3AF;
+  text-align: justify;
+}
+
+.sinopseContainer .sinopseSection .cardsSection {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+.sinopseContainer .sinopseSection .cardsSection .card {
+  background-color: #212121;
+  border-radius: 8px;
+  border: 1px solid #343434;
+  padding: 16px 64px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex: 1 1 calc(50% - 8px);
+  box-sizing: border-box;
+}
+.sinopseContainer .sinopseSection .cardsSection .card p {
+  font-size: 16px;
+  font-weight: 400;
+  color: #767c84;
+}
+.sinopseContainer .sinopseSection .cardsSection .card h2 {
+  font-size: 16px;
+  font-weight: 700;
+  color: #FFF;
+  text-align: center;
+  margin-top: -4px;
+}
+
+.projectDescription {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 180px;
+  gap: 16px;
+}
+
+.projectDescription h1 {
+  font-size: 36px;
+  color: #990000;
+  margin-bottom: 0px;
+}
+
+.projectDescription p {
+  font-size: 16px;
+  font-weight: 300;
+  color: #FFF;
+  max-width: 780px;
+  text-align: center;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+footer p {
+  font-size: 16px;
+  font-weight: 400;
+  color: #8a9098;
+}
