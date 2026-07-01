@@ -10,10 +10,6 @@
   .sinopseContainer .sinopseSection {
     margin-top: -24px;
   }
-  .sinopseContainer .poster {
-    min-width: 436px;
-    margin-right: 64px;
-  }
 }
 @media (max-width: 1024px) {
   .sinopseContainer {
@@ -23,16 +19,35 @@
     gap: 48px;
   }
 
-  .sinopseContainer .poster {
-    min-width: 100%;
-    max-width: 436px;
-    width: 100%;
-    margin-right: 0;
-  }
-
   .sinopseContainer .sinopseSection {
     width: 100%;
     max-width: 100%;
+  }
+}
+
+/* ========================= */
+/* Responsividade - 768px */
+/* ========================= */
+
+@media (max-width: 768px) {
+  .bannerContent {
+    left: 24px;
+    right: 24px;
+    max-width: none;
+    gap: 16px;
+  }
+
+  .bannerContent h1 {
+    font-size: 2rem;
+  }
+
+  .bannerContent p {
+    font-size: .95rem;
+  }
+
+  .bannerButton {
+    padding: 12px 22px;
+    font-size: 16px;
   }
 }
 
@@ -90,11 +105,13 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 0px 48px 0px 48px;
+  margin-bottom: 100px;
 }
 
 .titles h1 {
   font-size: 30px;
   font-weight: 900;
+  font-family: "Rubik Wet Paint", system-ui;
   color: #990000;
   cursor: pointer;
 }
@@ -130,20 +147,47 @@ body {
   margin-bottom: 200px;
 }
 
-.sinopseContainer {
-  display: flex;
-  margin-bottom: 200px;
+.videoFrame {
+  width: fit-content;
+  padding: 8px;
+
+  background: #111;
+  border: 1px solid #2d2d2d;
+  border-radius: 12px;
+
+  box-shadow:
+    0 0 0 1px rgba(255,255,255,0.03),
+    0 12px 30px rgba(0,0,0,.35);
+
+  overflow: hidden;
 }
 
-.sinopseContainer .poster {
-  height: 406px;
-  background-color: #FFF;
+.sinopseContainer {
+  display: flex;
+  gap: 64px;
+  margin-bottom: 200px;
 }
 
 .sinopseContainer .sinopseSection {
   display: flex;
   flex-direction: column;
   max-width: 1216px;
+  gap: 16px;
+}
+
+.sinopseContainer .poster {
+  flex: 1;
+  max-width: 420px;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.sinopseContainer .sinopseSection {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
   gap: 16px;
 }
 
@@ -157,6 +201,13 @@ body {
   font-weight: 400;
   color: #9CA3AF;
   text-align: justify;
+}
+.sinopseContainer .sinopseSection .bold {
+  font-size: 14px;
+  font-weight: 700;
+  color: #FFFFFF;
+  text-align: justify;
+  margin-top: -24px;
 }
 
 .sinopseContainer .sinopseSection .cardsSection {
@@ -187,6 +238,81 @@ body {
   color: #FFF;
   text-align: center;
   margin-top: -4px;
+}
+
+.bannerSection {
+  position: relative;
+  width: 100%;
+  margin-bottom: 180px;
+}
+
+.bannerSection .banner {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.bannerContent {
+  position: absolute;
+  top: 50%;
+  left: 8%;
+  transform: translateY(-50%);
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 24px;
+
+  max-width: 560px;
+}
+
+.bannerContent h1 {
+  margin: 0;
+  font-family: "Seymour One", sans-serif;
+  font-size: clamp(1.5rem, 3vw, 3rem);
+  color: #DC9624;
+  line-height: 1.1;
+}
+
+.bannerContent p {
+  margin: 0;
+  color: #FFFFFF;
+  font-size: clamp(0.9rem, 1.2vw, 1.15rem);
+  line-height: 1.6;
+  text-align: justify;
+}
+
+.bannerButton {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  padding: 16px 28px;
+
+  background: #DC9624;
+  color: #000;
+  border: none;
+  border-radius: 999px;
+
+  font-size: 18px;
+  font-weight: 700;
+
+  cursor: pointer;
+  transition: .2s;
+}
+
+.bannerButton span {
+  font-family: Roboto;
+  font-size: 22px;
+  transition: transform .2s;
+}
+
+.bannerButton:hover {
+  transform: translateY(-2px);
+}
+
+.bannerButton:hover span {
+  transform: translateX(5px);
 }
 
 .projectDescription {

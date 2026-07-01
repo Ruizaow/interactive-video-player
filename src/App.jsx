@@ -1,4 +1,6 @@
 import VideoPlayerSection from "./components/VideoPlayerSection";
+import poster from "./assets/deixado_para_tras.png";
+import banner from "./assets/banner.png";
 import "./styles/App.css";
 
 function App() {
@@ -13,27 +15,30 @@ function App() {
       </div>
 
       <div className="videoplayerContainer">
-        <VideoPlayerSection/>
+        <div className="videoFrame">
+          <VideoPlayerSection />
+        </div>
       </div>
 
       <div className="sinopseContainer" id="sinopse">
-        <div className="poster"></div>
+        <img
+          className="poster"
+          src={poster}
+          alt="Poster"
+        />
 
         <div className="sinopseSection">
           <h1>SINOPSE</h1>
           <p>
-            Lorem ipsum dolor sit amet, consectetur
-            adipiscing elit. Sed do eiusmod tempor
-            incididunt ut labore et dolore magna
-            aliqua. Ut enim ad minim veniam, quis
-            nostrud exercitation ullamco laboris nisi
-            ut aliquip ex ea commodo consequat. Duis
-            aute irure dolor in reprehenderit in
-            voluptate velit esse cillum dolore eu
-            fugiat nulla pariatur. Excepteur sint
-            occaecat cupidatat non proident, sunt in
-            culpa qui officia deserunt mollit anim id
-            est laborum.
+            Tudo começou quando as luzes da faculdade se apagaram.<br></br>
+            Quando a energia desaparece Lucas só quer uma coisa: chegar em casa.
+            Mas, ao longo do caminho, ele encontrará pessoas, criaturas e decisões
+            que mudarão completamente sua jornada. Alguns caminhos podem levá-lo a
+            perigos sem volta. Nesta experiência interativa, cada escolha importa e
+            cada decisão traz consequências.
+          </p>
+          <p className="bold">
+            Afinal, qual caminho você escolherá seguir?
           </p>
           <div className="cardsSection">
             <div className="card">
@@ -53,6 +58,29 @@ function App() {
               <h2>Prototipação Rápida</h2>
             </div>
           </div>
+        </div>
+      </div>
+
+      <div className="bannerSection">
+        <img
+          className="banner"
+          src={banner}
+          alt="Banner"
+        />
+
+        <div className="bannerContent">
+          <h1>Seu próximo favorito está aqui</h1>
+
+          <p>
+            Novidades, lançamentos e action figures exclusivas esperando por você.
+            Descubra toda a coleção que preparamos especialmente para fãs e
+            colecionadores.
+          </p>
+
+          <button className="bannerButton">
+            Conhecer as peças
+            <span>→</span>
+          </button>
         </div>
       </div>
 
